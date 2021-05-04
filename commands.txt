@@ -1,0 +1,5 @@
+sudo systemctl enable rabbitmq-server
+sudo systemctl start rabbitmq-server
+Check if running: systemctl status rabbitmq-server
+
+Turn on celery worker: celery -A rabbitmq_celery worker -l info
